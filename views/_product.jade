@@ -1,0 +1,8 @@
+- products = ["lapiz1", "lapiz2", "lapiz3", "lapiz4", "lapiz5", "no-bulto", "jevi-plain", 'sam-graffiti', 'jevi-gorra', 'jevi-gorra2']
+
+#products
+  ul
+    - for (i in products)
+      li
+        .tiles
+          img.header(src="img/#{products[i]}.jpg")
