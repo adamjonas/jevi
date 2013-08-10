@@ -1,16 +1,42 @@
 ul
-  column(10)
+  column(11)
   
-
   li
     list-style: none
     float: left
-    height: 16em
+    min-height: 20em
     column(3)
     box-shadow: 10px 10px 5px #888888
     margin: 3em 4em 0 0
     border: 1px solid
 
-    .tiles
-      width: 100%
+    .shirts
       margin: 1em
+
+    .caps
+      margin: 3em 0
+
+      img
+        margin-bottom: 3em
+
+    img
+      width:78% !important
+
+    .button-group
+      column(12)
+      // float: right
+
+      .compra
+        simple-button(#db5757, 15)
+        position: relative
+        // bottom: 5px
+        column(5)
+
+      .enlarge
+        simple-button(#e8e8e8, 4)
+        font-size: 2em
+        column(2)
+
+        span
+          position: relative
+          bottom: 4px

@@ -265,15 +265,15 @@ ul {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 81.25%;
+  width: 89.58333333333334%;
   margin: 0 1.0416666666666665%;
-  *width: 81.25% -correction;
+  *width: 89.58333333333334% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
 ul li {
   list-style: none;
   float: left;
-  height: 16em;
+  min-height: 20em;
   display: inline;
   float: left;
   overflow: hidden;
@@ -289,9 +289,102 @@ ul li {
   margin: 3em 4em 0 0;
   border: 1px solid;
 }
-ul li .tiles {
-  width: 100%;
+ul li .shirts {
   margin: 1em;
+}
+ul li .caps {
+  margin: 3em 0;
+}
+ul li .caps img {
+  margin-bottom: 3em;
+}
+ul li img {
+  width: 78% !important;
+}
+ul li .button-group {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 97.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+ul li .button-group .compra {
+  font-size: 15px;
+  padding: 11.475px 25.245px;
+  -webkit-border-radius: 3.461541124262403px;
+  -moz-border-radius: 3.461541124262403px;
+  -o-border-radius: 3.461541124262403px;
+  -ms-border-radius: 3.461541124262403px;
+  border-radius: 3.461541124262403px;
+  background-color: #db5757;
+  color: #494949;
+  color: rgba(73,73,73,0.95);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 39.58333333333333%;
+  margin: 0 1.0416666666666665%;
+  *width: 39.58333333333333% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+ul li .button-group .compra:hover,
+ul li .button-group .compra:focus {
+  background-color: #d84a4a;
+  color: #474747;
+  color: rgba(71,71,71,0.95);
+}
+ul li .button-group .compra:active {
+  background-color: #d63e3e;
+}
+ul li .button-group .enlarge {
+  font-size: 4px;
+  padding: 3.06px 6.732000000000001px;
+  -webkit-border-radius: 0.9230776331366408px;
+  -moz-border-radius: 0.9230776331366408px;
+  -o-border-radius: 0.9230776331366408px;
+  -ms-border-radius: 0.9230776331366408px;
+  border-radius: 0.9230776331366408px;
+  background-color: #e8e8e8;
+  color: #494949;
+  color: rgba(73,73,73,0.95);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 14.583333333333334%;
+  margin: 0 1.0416666666666665%;
+  *width: 14.583333333333334% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+ul li .button-group .enlarge:hover,
+ul li .button-group .enlarge:focus {
+  background-color: #dcdcdc;
+  color: #474747;
+  color: rgba(71,71,71,0.95);
+}
+ul li .button-group .enlarge:active {
+  background-color: #d1d1d1;
+}
+ul li .button-group .enlarge span {
+  position: relative;
+  bottom: 4px;
 }
 body .wrap {
   display: inline;
@@ -312,4 +405,14 @@ body img.header {
   *width: 64.58333333333334% -correction;
   *margin: 0 1.0416666666666665% -correction;
   margin-left: 9.375%;
+}
+body #footer {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 97.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+  min-height: 4em;
 }

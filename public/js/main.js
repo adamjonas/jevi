@@ -1,5 +1,5 @@
 (function() {
-  console.log("hello from a require'd coffee file (via assets/js/_helper.coffee)");
+
 
 }).call(this);
 
@@ -10,9 +10,6 @@
       fancybox: {
         deps: ['jquery']
       },
-      customSelect: {
-        deps: ['jquery']
-      },
       fitvid: {
         deps: ['jquery']
       }
@@ -20,15 +17,17 @@
     paths: {
       jquery: "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min",
       fonts: "//fast.fonts.com/jsapi/977de03a-bfaa-4a1c-991f-fde6b155a146",
+      fancybox: 'vendor/fancyapps/source/jquery.fancybox',
+      mousewheel: 'vendor/fancyapps/lib/jquery.mousewheel-3.0.6.pack',
       facebookSdk: '//connect.facebook.net/en_US/all',
       fitvid: 'https://rawgithub.com/davatron5000/FitVids.js/master/jquery.fitvids'
     }
   });
 
-  require(['jquery', 'fonts', 'facebookSdk', 'fitvid'], function($) {});
-
-  require(['jquery'], function($) {
-    return console.log('jquery loaded (via assets/js/main.coffee)');
+  require(['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], function($) {
+    return $(function() {
+      return $('.fancy').fancybox();
+    });
   });
 
 }).call(this);

@@ -1,8 +1,30 @@
-- products = ["lapiz1", "lapiz2", "lapiz3", "lapiz4", "lapiz5", "no-bulto", "jevi-plain", 'sam-graffiti', 'jevi-gorra', 'jevi-gorra2']
+- shirts = ["lapiz1", "lapiz2", "lapiz3", "lapiz4", "lapiz5", "no-bulto", "jevi-plain", 'sam-graffiti', "lapiz2"]
+- caps   = ['jevi-gorra', 'jevi-gorra2', 'jevi-gorra']
 
 #products
   ul
-    - for (i in products)
+    - for (i in shirts)
       li
-        .tiles
-          img.header(src="img/#{products[i]}.jpg")
+        .shirts
+          a.fancy(rel='group', data-fancybox-group="button", href="img/#{shirts[i]}.jpg")
+            img.header(src="img/#{shirts[i]}.jpg")
+
+          .button-group
+            .enlarge.fancy(rel='group', data-fancybox-group="button", href="img/#{shirts[i]}.jpg")
+              span +
+            .compra Compra
+            p $34.99
+            
+
+    - for (i in caps)
+      li 
+        .caps
+          a.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg")
+            img.header(src="img/#{caps[i]}.jpg")
+
+          .button-group
+            .enlarge.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg")
+              span +
+            .compra Compra
+            p $48.99
+            
