@@ -1,4 +1,4 @@
-- shirts = ["lapiz1", "lapiz2", "lapiz3", "lapiz4", "lapiz5", "lapiz6", "lapiz7", "lapiz8", "lapiz3", "jevi-plain", "jevi-plain2", 'sam-graffiti']
+- shirts = ["secreto1", "secreto2", "secreto3", "secreto4", "lapiz1", "lapiz2", "lapiz3", "lapiz4", "lapiz5", "lapiz6", "lapiz7", "lapiz8", "jevi-plain", "jevi-plain2", 'sam-graffiti']
 - caps   = ['jevi-gorra', 'jevi-gorra2', 'jevi-gorra']
 
 #products
@@ -13,18 +13,18 @@
             .enlarge.fancy(rel='group', data-fancybox-group="button", href="img/#{shirts[i]}.jpg", data-product="#{shirts[i]}")
               span +
             .compra(data-product="#{shirts[i]}") Compra
-            p $34.99
+            // p $34.99
             
 
     - for (i in caps)
       li 
         .caps
-          a.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg", data-product="#{shirts[i]}")
+          a.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg", data-product="#{caps[i]}")
             img.header(src="img/#{caps[i]}.jpg")
 
           .button-group
-            .enlarge.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg", data-product="#{shirts[i]}")
+            .enlarge.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg", data-product="#{caps[i]}")
               span +
             .compra(data-product="#{caps[i]}") Compra
-            p $48.99
+            // p $48.99
             
