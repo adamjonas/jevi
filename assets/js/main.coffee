@@ -38,10 +38,13 @@ require ['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], ($) ->
 
     #GA analytics
     $('.compra').click ->
-      container = $(@)
-      product_id  = container.data('product')
-
+      product_id  = $(@).data('product')
       ga('send', 'event', 'compra', product_id)
 
+    $('.enlarge').click ->
+      product_id  = $(@).data('product')
+      ga('send', 'event', 'enlarge div', product_id)
 
-
+    $('.fancy').click ->
+      product_id  = $(@).data('product')
+      ga('send', 'event', 'fancy div', product_id)
