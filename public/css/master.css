@@ -261,7 +261,7 @@ body:after {
 body:after {
   clear: both;
 }
-ul {
+#products ul {
   display: inline;
   float: left;
   overflow: hidden;
@@ -270,7 +270,7 @@ ul {
   *width: 89.58333333333334% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
-ul li {
+#products ul li {
   list-style: none;
   float: left;
   min-height: 20em;
@@ -286,22 +286,14 @@ ul li {
   -o-box-shadow: 10px 10px 5px #888;
   -ms-box-shadow: 10px 10px 5px #888;
   box-shadow: 10px 10px 5px #888;
-  margin: 3em 4em 0 0;
+  margin: 2em 4em 1em 0;
   border: 1px solid;
 }
-ul li .shirts {
+#products ul li .shirts {
   margin: 1em;
 }
-ul li .caps {
+#products ul li .caps {
   margin: 3em 0;
-}
-ul li .caps img {
-  margin-bottom: 3em;
-}
-ul li img {
-  width: 78% !important;
-}
-ul li .button-group {
   display: inline;
   float: left;
   overflow: hidden;
@@ -310,7 +302,22 @@ ul li .button-group {
   *width: 97.91666666666666% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
-ul li .button-group .compra {
+#products ul li .caps img {
+  margin-bottom: 3em;
+}
+#products ul li img {
+  width: 100%;
+}
+#products ul li .button-group {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 97.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+#products ul li .button-group .compra {
   font-size: 15px;
   padding: 11.475px 25.245px;
   -webkit-border-radius: 3.461541124262403px;
@@ -337,16 +344,16 @@ ul li .button-group .compra {
   *width: 39.58333333333333% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
-ul li .button-group .compra:hover,
-ul li .button-group .compra:focus {
+#products ul li .button-group .compra:hover,
+#products ul li .button-group .compra:focus {
   background-color: #d84a4a;
   color: #474747;
   color: rgba(71,71,71,0.95);
 }
-ul li .button-group .compra:active {
+#products ul li .button-group .compra:active {
   background-color: #d63e3e;
 }
-ul li .button-group .enlarge {
+#products ul li .button-group .enlarge {
   font-size: 4px;
   padding: 3.06px 6.732000000000001px;
   -webkit-border-radius: 0.9230776331366408px;
@@ -373,18 +380,29 @@ ul li .button-group .enlarge {
   *width: 14.583333333333334% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
-ul li .button-group .enlarge:hover,
-ul li .button-group .enlarge:focus {
+#products ul li .button-group .enlarge:hover,
+#products ul li .button-group .enlarge:focus {
   background-color: #dcdcdc;
   color: #474747;
   color: rgba(71,71,71,0.95);
 }
-ul li .button-group .enlarge:active {
+#products ul li .button-group .enlarge:active {
   background-color: #d1d1d1;
 }
-ul li .button-group .enlarge span {
+#products ul li .button-group .enlarge span {
   position: relative;
   bottom: 4px;
+}
+body img.intro {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+  *width: 81.25% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+  margin-left: 9.375%;
+  margin-top: 10em;
 }
 body .wrap {
   display: inline;
@@ -395,8 +413,9 @@ body .wrap {
   *width: 89.58333333333334% -correction;
   *margin: 0 1.0416666666666665% -correction;
   margin-left: 9.375%;
+  display: none;
 }
-body img.header {
+body img.title {
   display: inline;
   float: left;
   overflow: hidden;

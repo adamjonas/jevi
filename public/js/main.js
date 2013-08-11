@@ -26,7 +26,9 @@
 
   require(['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], function($) {
     return $(function() {
-      return $('.fancy').fancybox();
+      $('.fancy').fancybox();
+      $('.intro').slideUp(4000);
+      return $('.wrap').delay(4000).show(2000);
     });
   });
 
