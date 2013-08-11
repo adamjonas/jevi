@@ -25,13 +25,23 @@ require.config
 # this will fire once the required scripts have been loaded
 require ['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], ($) ->
 
+  #intro
   $('.intro').slideUp(4000)
-  
+
   $ ->
   
+    # fancybox
     $('.fancy').fancybox()
 
-    
+    #initial screen
     $('.wrap').delay(4000).show(2000)
+
+    #GA analytics
+    $('.compra').click ->
+      container = $(@)
+      product_id  = container.data('product')
+
+      ga('send', 'event', 'compra', product_id)
+
 
 

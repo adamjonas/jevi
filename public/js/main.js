@@ -1,1 +1,41 @@
-!function(){}.call(this),function(){require.config({waitSeconds:0,shim:{fancybox:{deps:["jquery"]},fitvid:{deps:["jquery"]}},paths:{jquery:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min",fonts:"//fast.fonts.com/jsapi/977de03a-bfaa-4a1c-991f-fde6b155a146",fancybox:"../vendor/fancyapps/source/jquery.fancybox",mousewheel:"../vendor/fancyapps/lib/jquery.mousewheel-3.0.6.pack",facebookSdk:"//connect.facebook.net/en_US/all",fitvid:"https://rawgithub.com/davatron5000/FitVids.js/master/jquery.fitvids"}}),require(["jquery","fonts","fancybox","facebookSdk","fitvid"],function(e){return e(".intro").slideUp(4e3),e(function(){return e(".fancy").fancybox(),e(".wrap").delay(4e3).show(2e3)})})}.call(this);
+(function() {
+
+
+}).call(this);
+
+(function() {
+  require.config({
+    waitSeconds: 0,
+    shim: {
+      fancybox: {
+        deps: ['jquery']
+      },
+      fitvid: {
+        deps: ['jquery']
+      }
+    },
+    paths: {
+      jquery: "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min",
+      fonts: "//fast.fonts.com/jsapi/977de03a-bfaa-4a1c-991f-fde6b155a146",
+      fancybox: '../vendor/fancyapps/source/jquery.fancybox',
+      mousewheel: '../vendor/fancyapps/lib/jquery.mousewheel-3.0.6.pack',
+      facebookSdk: '//connect.facebook.net/en_US/all',
+      fitvid: 'https://rawgithub.com/davatron5000/FitVids.js/master/jquery.fitvids'
+    }
+  });
+
+  require(['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], function($) {
+    $('.intro').slideUp(4000);
+    return $(function() {
+      $('.fancy').fancybox();
+      $('.wrap').delay(4000).show(2000);
+      return $('.compra').click(function() {
+        var container, product_id;
+        container = $(this);
+        product_id = container.data('product');
+        return ga('send', 'event', 'compra', product_id);
+      });
+    });
+  });
+
+}).call(this);
