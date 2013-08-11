@@ -25,11 +25,13 @@ require.config
 # this will fire once the required scripts have been loaded
 require ['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], ($) ->
 
+  $('.intro').slideUp(4000)
+  
   $ ->
   
     $('.fancy').fancybox()
 
-    $('.intro').slideUp(4000)
+    
     $('.wrap').delay(4000).show(2000)
 
 
