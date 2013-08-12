@@ -6,7 +6,7 @@
     - for (i in shirts)
       li
         .shirts
-          a.fancy(rel='group', data-fancybox-group="button", href="img/#{shirts[i]}.jpg", data-product="#{shirts[i]}")
+          a.pic.fancy(rel='group', data-fancybox-group="button", href="img/#{shirts[i]}.jpg", data-product="#{shirts[i]}")
             img.header(src="img/#{shirts[i]}.jpg")
 
           .button-group
@@ -19,7 +19,7 @@
     - for (i in caps)
       li 
         .caps
-          a.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg", data-product="#{caps[i]}")
+          a.pic.fancy(rel='group', data-fancybox-group="button", href="img/#{caps[i]}.jpg", data-product="#{caps[i]}")
             img.header(src="img/#{caps[i]}.jpg")
 
           .button-group

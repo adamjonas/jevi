@@ -39,12 +39,12 @@ require ['jquery', 'fonts', 'fancybox', 'facebookSdk', 'fitvid'], ($) ->
     #GA analytics
     $('.compra').click ->
       product_id  = $(@).data('product')
-      ga('send', 'event', 'compra', product_id)
+      ga('send', 'event', 'compra click', product_id)
 
     $('.enlarge').click ->
       product_id  = $(@).data('product')
-      ga('send', 'event', 'enlarge div', product_id)
+      ga('send', 'event', 'enlarge click', product_id)
 
-    $('.fancy').click ->
+    $('.pic').click ->
       product_id  = $(@).data('product')
-      ga('send', 'event', 'fancy div', product_id)
+      ga('send', 'event', 'pic click', product_id)
